@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isn't he the best??</title>
+</head>
+<body>
+    <h1>View this image and clap!!</h1>
+    <img src="dhoni.jpg" alt="" style="width:25%;">
+    <p style="opacity: 0.05;">Dhoni is giving y'all cookies!</p>
+    <p>If you'll clap you'll get the flag!!!!!</p>
+
+
+    <p style="color:white">Nah!! You really thought you'll get the flag if you clap!</p>
+    <script>
+        console.log((localStorage.getItem('thala')));
+
+        if (localStorage.getItem('thala') === '7'){
+            let h1 = document.createElement('h1');
+           h1.innerText = 'You got the Flag!! DECIPHER{Dh0N1_1s_Th3_B3st}'; 
+           document.body.appendChild(h1)
+        }
+        localStorage.setItem('thala', 1)
+    </script>
+</body>
+</html>
